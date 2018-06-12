@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Songs</title>
+       
+       <link href="/css/index.css" rel="Stylesheet"/>
+        
+          
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="admin">
+          <h1 class="songDiv">Song upload</h1> 
+                <%= typeof msg != 'undefined' ? msg: ' ' %> 
+                <form action="/users/artistenames" method="GET"> 
+                    <div class="row">
+                            
+                             <label for="artistenames" class="row">Artiste</label>
+                             <!--   <input  type="text" id="artisename" name="artistenames" />--> 
+                              <select id="artistename" name="artistenames" class>
+                               <% for (let c=0; c < artiste.length; c++){%>
+                                <option value="<%= artiste[c].artiste %>"><%= artiste[c].artiste %></option>
+                                <% } %>
+                              </select>
+                             
+                             </div> 
+                       
+                            <label for="song"> Song</label>
+                            <input  type="text" id="song" name="song" />
+                        
+                                             
+                            <label for="week"> Week</label>
+                            <input  type="text"  id="week" name="week" />
+
+                            <div class="row">
+                           
+                            <label for="source" class="row">Source</label>
+                                <select id="sources" name="source" class>
+                                  <option value="airplay">Airplay</option>
+                                  <option value="video">Video</option>
+                                  <option value="digital">Digital</option>
+                                </select>
+                            </div>                              
+                       
+                         <p>                                     
+                        <input  class=btncomp type="submit" name="Save" value="Save" />
+                        <input class=btncomp  type="submit" name="Exit"  value="Exit" />
+                        </p>
+                </form>
+        </div>
+         <!-- Compiled and minified JavaScript
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+        <script src="/javascript/index.js" type="text/javascript"></script>
+        
+    </body>
+</html>

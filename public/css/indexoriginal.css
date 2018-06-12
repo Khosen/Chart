@@ -1,0 +1,967 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 19, 2017, 3:23:19 PM
+    Author     : kels
+*/
+
+*
+{
+    margin: 0px;
+}
+#admingroup
+{
+  width:800px;
+   font-size: 14px;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-top: 30px;
+     /* line-height: 20px;*/
+}
+#admin
+{
+  width:100%;
+  font-family:"Times New Roman";
+       margin-top: 20px;
+   /* margin-bottom: 20px;*/
+  padding-left:15px;
+  padding-bottom: 5px;
+  padding-top:5px;
+  background-color: #F8F8F8;
+   
+  /* line-height: 20px;*/
+}
+.dropdown
+{
+    margin-left: 20px;
+}
+.comp1
+{
+    padding:0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-content: right;
+
+
+}
+
+.comp2
+{
+    margin-left: 30px;
+}
+.comp3
+{
+    margin-left: 25px;
+}
+
+#login
+{
+    margin-top: 100px;
+    font-family:"Times New Roman";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 400px;
+   line-height: 20px;
+}
+.comp
+{
+    align-content: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 25px;
+    margin-left:100px;
+   margin-top: 10px;
+}
+.comp5
+{
+    align-content: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 25px;
+    margin-left:20px;
+   margin-top: 10px;
+}
+.compbtn{
+  align-content: center;
+  font-weight: bold;
+  background-color: black;
+  padding: 3px 10px 3px 10px;
+  text-decoration: none;
+  border-width:2px;
+  border-style:solid;
+  border-color: gray;
+  color: white;
+  width: 100px;
+  height: 30px;
+  margin-left:20px;
+/* margin-top: 10px;*/
+}
+.comp6
+{
+    align-content: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+   
+    width: 80px;
+    height: 25px;
+    margin-left:10px;
+   margin-top: 10px;
+}
+body
+{
+   background-color:  white;  
+   font-family: "Intro-Inline";
+  margin:0 auto;
+  
+}
+
+  /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+  @font-face {font-family:"Intro-Inline";src:url("mywebfonts/Intro_Inline.eot?") 
+                  format("eot"),url("mywebfonts/Intro_Inline.woff") format("woff"),
+                            url("mywebfonts/Intro_Inline.ttf")
+                  format("truetype"),url("mywebfonts/Intro_Inline.svg#Intro-Inline") format("svg");
+             }
+
+/*wrapper for the main container*/
+#wrapper
+{
+        margin: auto;
+        margin-top: 20vh;
+ }
+ /*all divs under this container to be maintained in aspect*/
+#container
+{
+    position:absolute;
+    margin:0px auto;
+  
+  }
+ 
+  /*wrapper for navigation divs and <a>*/    
+.wrapper1{
+    width:780px;
+    height:55px;
+    margin-left: 15vh;
+     margin-top:30px;
+     text-align:  left;
+    display: inline-block;
+     border-width: 4px;
+    border-style: solid;
+    border-color: orange;
+    position: static;
+}
+/*div for charts news music*/
+.div1
+{
+  width:380px;
+  height:50px;
+  font-size: 25px;
+  font-weight:  lighter;
+    color: white;
+    float:left;
+    padding:0px 10px 0px 10px;
+    text-align:  left;
+      border-width: 4px;
+    border-style: solid;
+    border-color: red;
+}
+/*div for facebook twitter instagram and search*/
+.searchdiv
+{
+   width:140px;
+   height:50px;
+  float:left; 
+ /*  padding:0px;
+  margin:0px;
+line-height: 0px;
+ font-size: 0px;
+  margin-left:0px;*/
+  white-space:  nowrap;
+display:inline-block;
+  border-style: solid;
+    border-color:yellow;
+    border-width:4px;
+}
+.menudiv{
+   
+float:right;
+    padding-right: 50px;
+    margin-left: 30px;}
+/*searchboxdiv*/
+.searchboxdiv
+{
+   width:120px;
+   height:40px;
+   white-space:nowrap;
+   font-size:0px;
+   display:inline-block;
+   align-items:  center;
+   float:left ;
+   padding:0px 30px 0px 0px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: chartreuse;
+      }
+.searchicon
+{
+    width:20px;
+        margin:0 auto;
+        padding:0px;
+       /* float:left;*/
+     
+   }
+/*div for menu*/
+.divmenu
+{
+    width:50px;
+    height:50px;
+    float:left;
+    margin-left: 0vh;
+    border-width: 4px;
+    border-style: solid;
+    border-color: green;
+}
+/*navigation*/
+nav
+{
+    position:fixed;
+    width:100%;
+    height:120px;
+/*   background-color: rgba ();*/
+background-color: black;
+      text-align: right;
+   vertical-align:  middle;
+    color:white;
+   
+  /*  padding:5px 0px 20px 0px;*/
+    z-index: 99;
+  
+}
+nav a
+{
+        color: white;
+         /*font-weight: bold;*/
+         font-size: 18px;
+    text-decoration: none;
+    margin-left: 30px;
+    line-height: 150px;
+    /*  padding:0px 10px 0px 10px;*/
+  
+}
+/*div for logo*/
+.logodiv
+{
+    float:left;
+    color:white;
+    width: 80px;
+ /*  margin-left: 5vh;*/
+    margin-top:5vh;
+    margin-bottom:2vh;
+    font-weight: bolder;
+    font-size: 50px;
+ z-index:10;
+  position: fixed; /*newly added*/
+    left: 30vh; /*newly added*/
+   /* padding:0vh 100vh 0vh 0vh;*/
+     vertical-align: middle;
+}
+ 
+/*css for the icons on nav*/
+.icons
+{
+    width:20px;
+    height:20px;
+           
+}
+/*css for the body*/
+#bodydiv
+{
+    margin:0 auto;
+    padding:0px;
+      
+    }
+  
+  #leftdiv
+  {
+      margin-top:60px;
+      margin-left:7%;
+      width:75%;
+      height:150px;
+      float:left;
+      margin-bottom:10px;
+ /*    border-width: 4px;
+    border-style: solid;
+    border-color: yellow;*/
+
+    
+       }
+       
+       .innerdiv
+       {
+                     
+           width:65%;
+          height:80%;
+          padding:0px;
+         
+          list-style-type: none;
+          margin:0px;
+          float:left;
+          position:relative;
+          background-color: gray;
+             border-width: 1px;
+         border-style: solid;
+         vertical-align: top;
+        
+        display:inline-block;
+         border-color: black;
+         text-decoration: none;
+         list-style-type: none;
+         
+       }
+       .arrowdiv
+       {
+           width:8%;
+           height:100%;
+            line-height:  1vh;
+          /*  margin-right:0.5vh;*/
+            vertical-align:  middle;
+           background-color: black;
+               display:inline-block;
+               list-style-type: none;
+          text-decoration: none;
+          min-width:4%;
+       }
+       .arrowdiv:hover
+       {
+           width:8%;
+           height:100%;
+            line-height:  1vh;
+            /*margin-right:1vh;*/
+            vertical-align:  middle;
+           background-color: #282828 ;
+           list-style-type: none;
+               display:inline-block;
+          text-decoration: none;
+          min-width: 4%;
+       }
+     
+       
+  #artdiv
+  {
+        
+     width:91.9%;
+     height:100%;
+     padding:0px;
+     
+     top:0px;
+     list-style-type: none;
+     text-decoration: none;
+     
+     margin:0px;
+     right: 0px;
+      float:right;
+    position:relative;
+   background-color: yellow;
+     display:table-cell;
+    
+  /*      border-width: 1px;
+    border-style: solid;
+  border-color: black;
+    text-decoration: none;
+    list-style-type: none;*/
+  }
+  #artdiv:hover
+  {
+          
+      width:91.9%;
+     height:100%;
+     padding:0px;
+     top:0px;
+     list-style-type: none;
+     text-decoration: none;
+    
+      margin:0px;
+     right: 0px;
+      float:right;
+     position:relative;
+     background-color: #909090;
+     display:table-cell;
+   }
+
+   #artul
+   {
+      margin:0; 
+       list-style-type: none;
+       text-decoration: none; 
+       padding:0px;
+       display:inline-block; 
+       width:100%;
+        height:120px;
+   }
+ 
+  /*div working for contents of music*/
+  .contentdiv
+  {
+      width:30%;
+      height:100%;
+      list-style: none;
+      vertical-align:  middle;
+      
+    /* border-left: 10px;*/
+      top:10%;
+     margin-right: 50%;
+    
+      /*margin-right: 50px;*/
+      text-decoration: none;
+     display:table-cell;
+  /* margin-right:10vh;
+  margin: -50px;*/
+    background-color:  orange;
+    text-align:  center;
+     text-decoration: none;
+  }
+  .contentrow1{
+    width:50%;
+    height: 50%;
+    vertical-align:  middle;
+    list-style: none;
+    text-decoration: none;
+    
+   font-size:200%;
+    font-weight: bolder;
+   /* border-width: 1px;
+    border-style: solid;
+  border-color: black;*/
+}
+.contentrow2{
+    width:50%;
+    height: 50%;
+    vertical-align:  middle;
+    list-style: none;
+  
+    text-decoration: none;
+     font-size:60%;
+    font-weight: bolder;
+   /* border-width: 1px;
+    border-style: solid;
+  border-color: black;*/
+
+}
+ 
+  .ccontentdiv
+  {
+      width:30%;
+     
+      height:100%;
+      vertical-align:  middle;
+     /* border-right: 10px;  */
+      list-style: none;
+      top:10%;
+     
+      /* margin-top:2px;
+      margin-left: 2px;
+      margin-right:10px;
+      padding-left:5px;*/
+      padding-right:5%;
+      margin:0px auto;
+      text-decoration: none;
+       background-color: red;
+       display:table-cell;
+    /*   background-color:  rgb(14, 14, 184);*/
+       text-align:center;
+   
+  }
+  .row1{
+      width:100%;
+      height: 35.3%;
+      vertical-align:  middle;
+      list-style: none;
+      text-decoration: none;
+      margin-top: 5%;
+       font-size: 120%;
+      font-weight: bolder;
+     /* padding-left:10px;
+      padding-right:10px;*/
+      margin-bottom: 10%;
+    /*  margin-right: 50px;
+      border-width: 5px;
+      border-style: solid;
+    border-color:orange;*/
+    /*display: table-row;*/
+    
+  
+  }
+  .row2{
+    width:50%;
+    height: 20%;
+    vertical-align:  middle;
+    list-style: none;
+    text-decoration: none;
+      font-size: 90%;
+     font-weight: bolder;
+    margin-top: 5%;
+  /*  padding-left:10px;
+    padding-right:10px;*/
+    margin-bottom: 10%;
+   /* margin-right: 50px;
+    border-width: 1px;
+    border-style: solid;
+  border-color: black;
+  display:table-row;*/
+
+}
+.row3{
+   /* width:30%;*/
+   width:40%;
+    height: 33.3%;
+    vertical-align:  middle;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 50px 50px 50px 25px;
+    background-color: orange;
+     font-size: 80%;
+    font-weight: bolder;
+     margin-bottom: 10%;
+    margin-top: 15%;
+    margin-left:15%;
+    margin-right:10%;
+   /* margin-right: 50px;
+    border-width: 1px;
+    border-style: solid;
+  border-color: black;
+  display:table-cell;*/
+
+}
+  .rcontentdiv
+  {
+      width:40%;
+     
+      height:100%;
+      list-style: none;
+      vertical-align:  middle;
+      top:20%;
+     /*  right: 20px;
+     margin-top:1vh;*/
+     padding-right:10%;
+      margin-right: 15%;
+   /*   margin-right: 2vh;*/
+      background-color:  beige;
+  text-align:  center;
+       display:table-cell;
+       text-decoration: none;
+     }
+
+  #rightdiv
+  {
+   
+      margin-top: 10vh;
+    float:left;
+ position:fixed;
+      margin-left: 70%;
+    z-index: -1;
+       width:20%;
+      height:65vh;
+     /*  border-width: 4px;
+    border-style: solid;
+    border-color: yellow;*/
+  }
+  .topdiv
+  {
+     
+      width:100%;
+      height:30vh;
+      text-align:  center;
+      line-height: 100px;
+      vertical-align:  middle;
+     /* position:relative;*/
+      background-color:  rgb(93, 14, 172);
+     /*   border-width: 4px;
+    border-style: solid;
+    border-color: red;*/
+    color:black;
+   
+   /*float: right*/;
+     min-width: 25%;
+  }
+  .innertop
+  {
+      /* z-index: 99;
+     position:  fixed;*/
+      width:100%;
+      height:5vh;
+      background-color: black;
+      vertical-align:  middle;
+      text-align:  center;
+       color: white;
+       font-stretch:  extra-expanded;
+      font-size:100%;
+      line-height: 30px;
+      font-size: 100%;
+      
+     /* word-wrap: true;
+       border-width: 1px;
+    border-style: solid;
+    border-color: black;*/
+
+    
+  }
+/*  .innertopdiv
+  {
+     
+      width:100%;
+      height:24.9vh;
+      text-align:  center;
+      vertical-align:  middle;
+       background-color:  rgb(58, 14, 14);
+     /*   border-width: 4px;
+    border-style: solid;
+    border-color: red;
+    color:white;
+    word-wrap: true; 
+    font-size: 100%;
+    
+    float: right;
+     min-width: 25%;
+  }*/
+   .bottomdiv
+  {
+   
+      line-height:  100px;
+      text-align:  center;
+      width:100%;
+      height:30vh;
+      margin-top:5vh;
+      background-color:  black;
+      /*  border-width: 4px;
+    border-style: solid;
+    border-color: orange;
+    float: right;*/
+     min-width: 25%;
+  }
+  .innerbottom
+  {
+     /* z-index: 99;
+      position:  fixed;*/
+      width:100%;
+      height:5vh;
+      background-color:gray;
+       color: white;
+       font-stretch:  extra-expanded;
+      font-size:100%;
+      text-align:  center;
+      line-height: 30px;
+      
+  }
+  
+          
+  .arrowtab
+  {
+      width:10vh;
+      height:20vh;
+      background-color: aqua;
+      float:left;
+  }
+  .normtab
+  {
+      width:70vh;
+      height:20vh;
+      background-color:olive;
+      float:right;
+  }
+  .newRow
+  {
+      width:79.5vh;
+      background-color:  gray;
+      border-bottom: 1px;
+     
+      border-bottom-color: black;
+      border-bottom-style: solid;
+  }
+  .hoverdiv
+  {
+       width:3vh;
+      height:5vh;
+      background-color:  beige;
+      border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    float:left;
+   
+  }
+
+
+.leftsub
+{
+    width:60px;
+    height:10px;
+    float: left;
+      border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    
+}
+
+.popup
+{
+   width:150px;
+    height:40px;
+   float: right;
+   font-size: 12px;
+    text-align:  center;
+    position: relative;
+    margin:0px;
+     padding:0px;
+  /*background-color: yellow;*/
+display: none;
+vertical-align: middle;
+  margin-right:35%;
+/*line-height:  10%;*/
+     /*  border-width: 2px;
+    border-style: solid;
+  border-color: green; */
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+/*.popup:hover
+{
+   width:150px;
+    height:40px;
+   float: right;
+   font-size: 12px;
+    text-align:  center;
+    position: relative;
+  /*background-color: yellow;*
+display: table-cell;
+vertical-align: middle;
+ margin-right: 30%;
+ margin:0px;
+ bottom: 150px;
+/*line-height:  10%;*
+text-decoration: none;
+list-style-type: none;
+    /*  border-width: 2px;
+    border-style: solid;
+   border-color: green; 
+    padding:0px;
+ 
+      
+}*/
+ul>li>a{
+    text-decoration: none;
+    color:white;
+}
+
+.imgdiv
+{
+   margin-top: 50px;
+    margin-left: 25%;
+    width:15px;
+    height:15px;
+ 
+}
+.imgcol
+{
+    
+        width:20px;
+        height:20px;
+     
+   }
+
+   .dipimg
+   {
+       
+           width:100%;
+           height:100%;
+        
+      }
+.col1
+{
+      width:35px;
+    height:39.5px;
+     text-align:  center;
+     line-height: 50%;
+     font-size: 12px;
+     vertical-align: middle;
+     display: table-cell;
+      background-color: black;
+      color:white;
+      border-right:1px solid white;
+      
+     /* border-width: 2px;
+    border-style: solid;
+    border-color:black;*/
+}
+
+.col2
+{
+      width:35px;
+    height:39.5px;
+     text-align:  center;
+     display: table-cell;
+     line-height: 50%;
+     font-size: 12px;
+     vertical-align: middle;
+      background-color: black;
+     
+      color:white;
+     /*  background-color: blue;
+
+     border-width: 2px;
+    border-style: solid;
+    border-color:black;*/
+}
+.col3
+{
+      width:35px;
+    height:39.5px;
+    text-align:  center;
+    display: table-cell;
+   
+    font-size: 12px;
+  vertical-align: middle;
+      background-color: black;
+      color:white;
+      border-left: 1px solid white;
+      margin-bottom: 50px;
+     
+         /*   background-color: blueviolet;
+ border-right-width: 2px;
+     border-width: 2px;
+    border-style: solid;
+    border-color:black;*/
+}
+.col4
+{
+      width:20px;
+    height:20px;
+  margin-bottom: 3px;
+   margin-top: 8px;
+   text-align:  center;
+    display: table-cell;
+    /*  float:right;
+    background-color: azure;
+
+     border-width: 2px;
+    border-style: solid;
+    border-color:black;*/
+ 
+}
+.logo
+{
+      width:150px;
+    height:150px;
+   
+    display: table-cell;
+    
+}
+.navbar-nav > li > a {padding-top:25px !important; padding-bottom:0 !important;}
+.navbar {min-height:100px !important}
+.navbar-brand{padding-top:0px; padding-bottom:0px; padding-left:100px; margin-bottom: 20px;}
+.navbar-toggle {
+    padding: 25px 0;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+.img{
+  max-width:180px;
+}
+.formreg
+{
+    width:50px;
+    height: 50px;
+    margin:0 auto;
+   margin-top: 150px;
+}
+input[type =text] {
+ width:95%;
+ padding:10px 20px;
+ padding-bottom: 0px;
+  margin: 8px 0;
+ border:none;
+border-bottom: 2px #F8F8F8;
+
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  width:50%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+select {
+  width: 100%;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+.songDiv{
+  margin-bottom: 50px;
+}
+.btncomp{
+  align-content: center;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 25px 50px 25px 50px;
+  width: 100px;
+  height: 30px;
+  margin-left:20px;
+ margin-top: 10px;
+}
+.imgprev{
+  
+  width:100px;
+  height:100px;
+  margin-bottom:5px;
+  border-width:2px;
+  border-color:gray;
+  border-style: solid;
+  display:inline-block;
+
+
+}
+.imgbtn{
+width:100px;
+word-wrap:true;
+height:100px;
+display: inline-block;
+
+}
+.imggroup
+{
+  margin-top:10px;
+  padding:0px 0px 0px 600px;
+}

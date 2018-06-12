@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+   
+    <link href="/bootstrap/css/bootstrap.min.css" rel="Stylesheet"/>
+    <link href="/bootstrap/css/bootstrap.css" rel="Stylesheet"/>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+    <link href="/css/index.css" rel="Stylesheet"/>
+    <title>Topnaija100</title>
+  </head>
+
+  <body id="wrapper">
+  
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">  <img src="images/logo.png"  alt="" class="logo"/></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle Navigation </span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        
+        </div>
+           
+        <div class="navbar-collapse collapse">
+         
+            <ul class="nav navbar-nav navbar-right ">
+                <li class="active"><a href="#">Charts</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#" ><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                <li> <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li> <a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+              
+        </div>
+       
+      </div>
+    </div>
+  
+      <div class="container">
+      
+        <form action="/index"  method="GET" >
+          <!--<form action="/models/top100.js"  method="GET" >-->
+          
+          <div  id="bodydiv" > <div id="leftdiv" > 
+         
+            <% for (let x=0; x < artistesong.length; x++)  {%>
+                <ul class="innerdiv" >
+                <li class="arrowdiv">
+                  <img src='images/orangearrow.png'  alt="" id='imgdiv' class='imgdiv' data-src='images/orangearrow.png' data-hover='images/whitearrow.png'/>
+                                             
+                  <ul class="popup" id="popup">
+                      <li class="col1"><%=artistesong[x].week %>
+                      </li><li class="col2"><%=artistesong[x].rating%>
+                      </li><li class="col3"> 
+                      </li><li class="col4">
+                      <img src="images/blackarrow.png"  alt="" class="col4"/>
+                      </li>
+                  </ul></li><li id="artdiv"><ul id="artul">
+                      <li class="contentdiv"><ul>
+                        
+                          <li class="contentrow1"><%= [x+1] %></li>
+                       
+                      <!--    <li class="contentrow1"><%=artistesong[x].rating %></li>-->
+                          <li class="contentrow2">last week:1</li>
+                      </ul></li>
+                    
+                      <li class="ccontentdiv"><ul> 
+                        <li class="row1"><%=artistesong[x].song %></li>
+                        <li class="row2"><%=artistesong[x]._id %></li>
+                        <li class="row3"><%=artistesong[x].source%></li>                        
+                      </ul></li>
+                      <li class="rcontentdiv"><div class="rinnercontent"><img src="<%= artistesong[x].photo %>" class="dipimg"/></div></li>
+                      
+                  </ul></li>
+                  </ul>
+                  <%} %>
+                  </div>
+                  <div id="rightdiv"> <div class="innertop" > Top100 news</div><div class="topdiv" > http://www.bing.com/news/apiclick.aspx?ref=BDIGeneric&aid=B2F92A03D6A2E6607FC7BCD1CD7FADAB645A4ADC&tid=3BCD69C6B3574086B9A6DF341806C9CB&url=https%3a%2f%2fwww.yahoo.com%2fnews%2fus-calls-more-sanctions-venezuela-ahead-latam-summit-002552609.html&c=8477474553838324396&mkt=en-ushttp://www.bing.com/news/apiclick.aspx?ref=BDIGeneric&aid=B2F92A03D6A2E6607FC7BCD1CD7FADAB645A4ADC&tid=3BCD69C6B3574086B9A6DF341806C9CB&url=https%3a%2f%2fwww.yahoo.com%2fnews%2fus-calls-more-sanctions-venezuela-ahead-latam-summit-002552609.html&c=8477474553838324396&mkt=en-us</div> 
+                 <div class="innerbottom" id="inb"> Highlights</div>
+
+                <% for (let f=0; f < 3; f++)  {%>
+                <ul class="bottomdiv">
+                 <li class="streamclass">airplay</li><li id="rankclass"><ul id="boxid"><li class="rbox1"><%=f %></li>
+                <li class="rbox2"><img src="" class="boximg"/></li>
+                <li class="rbox3"><ul style="padding: 0px; margin:0px;"> 
+                  <li class="rwbox1">ggg</li>
+                  <li class="rwbox2">kkk</li> </ul></li></ul id="boxid"></li></ul>
+                <%} %>
+               </div>
+              </div>
+              </div> 
+             
+              </form>
+         </div>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+  
+  </body>
+</html>
+
+<script>
+  $(".imgdiv").mouseover(function() {
+$(this).attr('src', $(this).data("hover"));
+$(this).next().show();
+
+}).mouseout(function() {
+$(this).attr('src', $(this).data("src"));
+$(this).next().hide();
+
+});
+</script>

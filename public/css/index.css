@@ -1,0 +1,1242 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 19, 2017, 3:23:19 PM
+    Author     : kels
+*/
+ /* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+ @font-face {font-family:"Intro-Inline";src:url("mywebfonts/Intro_Inline.eot?") 
+  format("eot"),url("mywebfonts/Intro_Inline.woff") format("woff"),
+            url("mywebfonts/Intro_Inline.ttf")
+  format("truetype"),url("mywebfonts/Intro_Inline.svg#Intro-Inline") format("svg");
+}
+
+*
+{
+    margin: 0px;
+   
+}
+#admingroup
+{
+  width:800px;
+   font-size: 14px;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-top: 30vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     /* line-height: 20px;*/
+}
+#admin
+{
+  width:100%;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       margin-top: 5vh;
+   /* margin-bottom: 20px;*/
+  padding-left:15px;
+  padding-bottom: 5px;
+  padding-top:1vh;
+  background-color: #F8F8F8;
+   
+  /* line-height: 20px;*/
+}
+.dropdown
+{
+    margin-left: 20px;
+}
+.comp1
+{
+    padding:0px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-content: right;
+}
+
+.comp2
+{
+    margin-left: 30px;
+}
+.comp3
+{
+    margin-left: 25px;
+}
+
+#login
+{
+    margin-top: 30vh;
+    font-family:"Times New Roman";
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 400px;
+   line-height: 20px;
+   width:50vh;
+}
+.comp
+{
+    align-content: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 25px;
+    margin-left:100px;
+   margin-top: 10px;
+}
+.comp5
+{
+    align-content: center;
+    font-weight: bold;
+     background-color: black;
+    color: white;
+    width: 80px;
+    height: 25px;
+    margin-left:20px;
+   margin-top: 20px;
+  }
+.compbtn{
+  align-content: center;
+  font-weight: bold;
+  background-color: black;
+  padding: 0px 10px 0px 10px;
+  text-decoration: none;
+
+  border-width:2px;
+  border-style:solid;
+  border-color: gray;
+  color: white;
+  width: 100px;
+  height: 25px;
+  margin-left:20px;
+/* margin-top: 10px;*/
+}
+a:hover, a:visited, a:link, a:active
+{
+  color: white;
+    text-decoration: none;
+}
+.comp6
+{
+    align-content: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+   
+    width: 80px;
+    height: 25px;
+    margin-left:10px;
+   margin-top: 10px;
+}
+body
+{
+   background-color:  white;  
+   font-family: "Intro-Inline";
+  margin:0 auto;
+  
+}
+ 
+/*wrapper for the main container*/
+#wrapper
+{
+        margin: auto;
+        margin-top: 20vh;
+ }
+ /*all divs under this container to be maintained in aspect*/
+#container
+{
+    position:absolute;
+    margin:0px auto;
+  
+  }
+ 
+  /*wrapper for navigation divs and <a>*/    
+.wrapper1{
+    width:780px;
+    height:55px;
+    margin-left: 15vh;
+     margin-top:30px;
+     text-align:  left;
+    display: inline-block;
+     border-width: 4px;
+    border-style: solid;
+    border-color: orange;
+    position: static;
+}
+/*div for charts news music*/
+.div1
+{
+  width:380px;
+  height:50px;
+  font-size: 25px;
+  font-weight:  lighter;
+    color: white;
+    float:left;
+    padding:0px 10px 0px 10px;
+    text-align:  left;
+      border-width: 4px;
+    border-style: solid;
+    border-color: red;
+}
+/*div for facebook twitter instagram and search*/
+.searchdiv
+{
+   width:140px;
+   height:50px;
+  float:left; 
+  white-space:  nowrap;
+display:inline-block;
+  border-style: solid;
+    border-color:yellow;
+    border-width:4px;
+}
+.menudiv{
+   
+float:right;
+    padding-right: 50px;
+    margin-left: 30px;}
+/*searchboxdiv*/
+.searchboxdiv
+{
+   width:120px;
+   height:40px;
+   white-space:nowrap;
+   font-size:0px;
+   display:inline-block;
+   align-items:  center;
+   float:left ;
+   padding:0px 30px 0px 0px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: chartreuse;
+      }
+.searchicon
+{
+    width:20px;
+        margin:0 auto;
+        padding:0px;
+       /* float:left;*/
+     
+   }
+/*div for menu*/
+.divmenu
+{
+    width:50px;
+    height:50px;
+    float:left;
+    margin-left: 0vh;
+    border-width: 4px;
+    border-style: solid;
+    border-color: green;
+}
+/*navigation*/
+nav
+{
+    position:fixed;
+    width:100%;
+    height:120px;
+/*   background-color: rgba ();*/
+background-color: black;
+      text-align: right;
+   vertical-align:  middle;
+    color:white;
+   
+  /*  padding:5px 0px 20px 0px;*/
+    z-index: 99;
+  
+}
+nav a
+{
+        color: white;
+         /*font-weight: bold;*/
+         font-size: 18px;
+    text-decoration: none;
+    margin-left: 30px;
+    line-height: 150px;
+    /*  padding:0px 10px 0px 10px;*/
+  
+}
+/*div for logo*/
+.logodiv
+{
+    float:left;
+    color:white;
+    width: 80px;
+ /*  margin-left: 5vh;*/
+    margin-top:5vh;
+    margin-bottom:2vh;
+    font-weight: bolder;
+    font-size: 50px;
+ z-index:10;
+  position: fixed; /*newly added*/
+    left: 30vh; /*newly added*/
+   /* padding:0vh 100vh 0vh 0vh;*/
+     vertical-align: middle;
+}
+ 
+/*css for the icons on nav*/
+.icons
+{
+    width:20px;
+    height:20px;
+           
+}
+/*css for the body*/
+#bodydiv
+{
+    margin:0 auto;
+    padding:0px;
+      
+    }
+  
+  #leftdiv
+  {
+      margin-top:40px;
+      margin-left:7%;
+      width:75%;
+      height:150px;
+      float:left;
+      margin-bottom:10px;
+
+       }
+       
+       .innerdiv
+       {
+                     
+           width:65%;
+          height:80%;
+          padding:0px;
+         min-width: 10%;
+          list-style-type: none;
+          margin:0px;
+          float:left;
+          position:relative;
+          background-color: gray;
+             border-width: 1px;
+         border-style: solid;
+         vertical-align: top;
+        
+        display:inline-block;
+         border-color: black;
+         text-decoration: none;
+         list-style-type: none;
+         
+       }
+       .innerdiv:hover{border-color: white;}
+       .arrowdiv
+       {
+           width:8%;
+           height:100%;
+            line-height:  1vh;
+          /*  margin-right:0.5vh;*/
+            vertical-align:  middle;
+           background-color: black;
+               display:inline-block;
+               list-style-type: none;
+          text-decoration: none;
+          min-width:4%;
+       }
+       .arrowdiv:hover
+       {
+           width:8%;
+           height:100%;
+            line-height:  1vh;
+            /*margin-right:1vh;*/
+            vertical-align:  middle;
+           background-color: #282828 ;
+           list-style-type: none;
+               display:inline-block;
+          text-decoration: none;
+          min-width: 4%;
+       }
+     
+       
+  #artdiv
+  {
+        
+     width:91.9%;
+     height:100%;
+     padding:0px;
+     min-width: 10%;
+     top:0px;
+     margin:0px;
+     right: 0px;
+      float:right;
+    position:relative;
+   background-color:gray;
+     display:table-cell;
+   }
+  #artdiv:hover
+  {
+          
+      width:91.9%;
+      min-width: 10%;
+     height:100%;
+     padding:0px;
+     top:0px;
+     list-style-type: none;
+     text-decoration: none;
+    
+      margin:0px;
+     right: 0px;
+      float:right;
+     position:relative;
+     background-color:white;
+     border-right:none;
+     border-width:0px;
+     border-color: whitesmoke;
+     display:table-cell;
+   }
+#artul
+{
+   /*margin:0; */
+    list-style-type: none;
+    text-decoration: none; 
+    text-align: left;
+    margin-right:10px;
+    padding:0px;
+    display:inline-block; 
+      width:100%;
+      min-width: 10%;
+     height:40vh;
+}
+ 
+ 
+  /*div working for contents of music*/
+  .contentdiv
+  {
+   width:20vw;
+   height: 100%;
+   min-width: 10%;
+    list-style: none;
+    vertical-align:  middle;
+    top:10%;
+     padding-right:1vw;
+    text-decoration: none;
+   display:table-cell;
+   text-decoration: none;
+    }
+  .contentrow1{
+   
+    list-style: none;
+    text-decoration: none;
+    font-size: 3.5vw;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    text-align: left;
+   }
+.contentrow2{
+  
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+    font-size: 0.7vw;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+     
+}
+ 
+  .ccontentdiv
+  {
+     
+   width:28vw;
+   min-width: 10%;
+   height:100%;
+     vertical-align:  middle;
+     word-wrap: break-word;
+    list-style: none;
+      margin:0px auto;
+     text-decoration: none;
+      display:table-cell;
+      text-align:center;
+    }
+
+  
+  .row1{
+     
+      list-style: none;
+      text-decoration: none;
+      word-wrap: break-word;
+      font-size: 1vw;
+      font-weight: lighter;
+      font-stretch:narrower;
+      margin-bottom:0.5vh;
+     text-align: justify;
+  
+  }
+  .row2{
+   
+    font-size: 1vw;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    list-style: none;
+    text-decoration: none;
+   /*  margin-top: 0.5vh;
+   margin-bottom: 2v;*/
+   text-align: left;
+    word-wrap: break-word;
+     
+}
+.row3{
+  
+     width:35%;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px 50px 50px 25px;
+    background-color: 	#686868;
+    font-size: 0.8vw;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+  }
+  .rcontentdiv
+  {
+    width:15vw;
+    min-width: 10%;
+   height:118px;
+     list-style: none;
+     vertical-align:  middle;
+     top:20%;
+     margin-left: 7vw;
+     padding-left: 3vw;
+    text-align:  center;
+      display:table-cell;
+      text-decoration: none;
+     }
+     .rinnercontent
+     {
+      width:10vw;
+      min-width: 10%;
+     height:110px;
+       list-style: none;
+       vertical-align:  middle;
+       top:10%;
+      
+      background-color:  black;
+   text-align:  center;
+     }
+
+  #rightdiv
+  {
+   
+      margin-top: 3vh;
+    float:left;
+ position:fixed;
+      margin-left: 70%;
+    z-index: -1;
+       width:18%;
+      height:65vh;
+     }
+  .topdiv
+  {
+     
+      width:100%;
+      height:23vh;
+      text-align:  center;
+      line-height: 100px;
+      vertical-align:  middle;
+     /* position:relative;*/
+      background-color:  brown;
+       color:whitesmoke;
+    word-wrap:break-word;
+   /*float: right*/;
+     min-width: 25%;
+  }
+  .innertop
+  {
+      /* z-index: 99;
+     position:  fixed;*/
+      width:100%;
+      height:5vh;
+      background-color: black;
+      vertical-align:  middle;
+      text-align:  center;
+       color: white;
+       font-stretch:  extra-expanded;
+      font-size:100%;
+      line-height: 20px;
+      font-size: 100%;
+      
+  }
+
+   .bottomdiv
+  {
+   
+    /*  line-height:  100px;*/
+      text-align:  center;
+      width:100%;
+      height:11.5vh;
+      margin: 0px;
+     background-color:  black;
+      color:white;
+      display:inline-block;
+      text-align: center;
+      font-size: 1vw;
+      font-weight: lighter;
+      font-stretch: extra-expanded;
+      font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+      min-width: 25%;
+      padding:0px;
+    
+     text-decoration: none;
+     list-style-type: none;
+     vertical-align: top;
+  }
+  
+  .streamclass{
+    width:100%;
+    height:4vh;
+    padding-top: 0.9vh;
+    /*background-color: red;*/
+    text-decoration: none;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 0.8vw;
+    font-weight: lighter;
+    font-stretch: extra-expanded;
+    }
+  #rankclass{
+    width:80%;
+    height:6.5vh;
+    margin:0 auto;
+       display:inline-block;
+   /* text-align: center;
+    background-color:green;*/
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+   min-width: 10%;
+
+    }
+  #boxid
+  {   
+     list-style-type: none;
+      text-decoration: none; 
+       padding:0px;
+      float: left;
+      display:table-cell; 
+          min-width: 10%;
+      height:100%;
+    
+  }
+   
+  .rbox1{
+   width:5vw;
+   height:5vh;
+     min-width: 10%;
+     list-style: none;
+      vertical-align: middle;
+    /* top:10%;*/
+     margin:0px;
+     padding-right:1vw;
+      display:table-cell;
+     text-decoration: none;
+   /*background-color: plum;*/
+ 
+ }
+ .rbox2{
+  width:7vw;
+  height: 90%;
+  min-width: 10%;
+   list-style: none;
+   vertical-align:middle;
+    top:10%;
+   /* padding-right:1vw;*/
+   text-decoration: none;
+  display:table-cell;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+background-color:white;
+
+}
+.rbox3{
+  width:25vw;
+  height: 90%;
+  min-width: 10%;
+   list-style: none;
+   vertical-align:  middle;
+  
+   top:10%;
+   margin: 0px;
+    padding-left:1vw;
+    text-decoration: none;
+  display:table-cell;
+ /* background-color: pink;*/
+
+}
+.rwbox1{
+  
+   list-style: none;
+   text-decoration: none;
+   word-wrap: break-word;
+   
+   font-weight: lighter;
+   font-stretch:narrower;
+   margin-bottom: 1px;
+  text-align: justify;
+
+}
+.rwbox2{
+ 
+ font-weight: lighter;
+ font-stretch: extra-expanded;
+ list-style: none;
+ text-decoration: none;
+/* margin-top: 10px;
+ margin-bottom: 10px;*/
+ text-align: left;
+ word-wrap: break-word;
+  
+}
+
+.boximg
+{
+    text-align: center;
+   padding:0px;
+   margin:0px;
+        width:100%;
+        height:80%;
+     
+   }
+
+  .innerbottom
+  {
+     /* z-index: 99;
+      position:  fixed;*/
+      width:100%;
+      height:5vh;
+      margin-top:4vh;
+      background-color:#ff8000;
+       color: white;
+       font-stretch:  extra-expanded;
+      font-size:100%;
+      text-align:  center;
+      line-height: 25px;
+      
+  }
+  
+          
+  .arrowtab
+  {
+      width:10vh;
+      height:20vh;
+      background-color: aqua;
+      float:left;
+  }
+  .normtab
+  {
+      width:70vh;
+      height:20vh;
+      background-color:olive;
+      float:right;
+  }
+  .newRow
+  {
+      width:79.5vh;
+      background-color:  gray;
+      border-bottom: 1px;
+     
+      border-bottom-color: black;
+      border-bottom-style: solid;
+  }
+  .hoverdiv
+  {
+       width:3vh;
+      height:5vh;
+      background-color:  beige;
+      border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    float:left;
+   
+  }
+
+
+.leftsub
+{
+    width:60px;
+    height:10px;
+    float: left;
+      border-width: 2px;
+    border-style: solid;
+    border-color: green;
+    
+}
+
+.popup
+{
+   width:150px;
+    height:40px;
+   float: right;
+   font-size: 12px;
+    text-align:  center;
+    position: relative;
+    margin:0px;
+     padding:0px;
+ display: none;
+vertical-align: middle;
+  margin-right:35%;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+ul>li>a{
+    text-decoration: none;
+    color:white;
+}
+
+.imgdiv
+{
+   margin-top: 50px;
+    margin-left: 25%;
+    width:15px;
+    height:15px;
+ 
+}
+.imgcol
+{
+    
+        width:20px;
+        height:20px;
+     
+   }
+
+   .dipimg
+   {
+       
+           width:100%;
+           height:70%;
+        
+      }
+.col1
+{
+      width:35px;
+    height:39.5px;
+     text-align:  center;
+     line-height: 50%;
+     font-size: 12px;
+     vertical-align: middle;
+     display: table-cell;
+      background-color: black;
+      color:white;
+      border-right:1px solid white;
+ }
+
+.col2
+{
+      width:35px;
+    height:39.5px;
+     text-align:  center;
+     display: table-cell;
+     line-height: 50%;
+     font-size: 12px;
+     vertical-align: middle;
+      background-color: black;
+     
+      color:white;
+  }
+.col3
+{
+      width:35px;
+    height:39.5px;
+    text-align:  center;
+    display: table-cell;
+   
+    font-size: 12px;
+  vertical-align: middle;
+      background-color: black;
+      color:white;
+      border-left: 1px solid white;
+      margin-bottom: 50px;
+    }
+.col4
+{
+      width:20px;
+    height:20px;
+  margin-bottom: 3px;
+   margin-top: 8px;
+   text-align:  center;
+    display: table-cell;
+
+}
+.logo
+{
+  margin-top: 15px;
+      width:70px;
+    height:60px;
+   
+    display: table-cell;
+    
+}
+.adminlogo
+{
+  margin-top: 5vh;
+      width:5vh;
+    height:5vh;
+   
+    display: table-cell;
+    
+}
+.navbar-nav > li > a {padding-top:20px !important; padding-bottom:0 !important;}
+.navbar {min-height:100px !important}
+.navbar-brand{padding-top:0px; padding-bottom:0px;  padding-left:100px; margin-bottom: 15px;}
+.navbar-toggle {
+    padding: 20px 0px 0px 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.img{
+  max-width:180px;
+}
+.formreg
+{
+    width:50px;
+    height: 50px;
+    margin:0 auto;
+   margin-top: 150px;
+}
+input[type =text] {
+ width:95%;
+ padding:10px 20px;
+ padding-bottom: 0px;
+  margin: 8px 0;
+ border:none;
+border-bottom: 2px #F8F8F8;
+
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  width:50%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
+}
+select {
+  width: 100%;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+.songDiv{
+  margin-bottom: 50px;
+}
+.btncomp{
+  align-content: center;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 25px 50px 25px 50px;
+  width: 100px;
+  height: 30px;
+  margin-left:20px;
+ margin-top: 10px;
+}
+.imgprev{
+  
+  width:100px;
+  height:100px;
+  margin-bottom:5px;
+  border-width:2px;
+  border-color:gray;
+  border-style: solid;
+  display:inline-block;
+
+
+}
+.imgbtn{
+width:100px;
+word-wrap:true;
+height:100px;
+display: inline-block;
+
+}
+.imggroup
+{
+  margin-top:10px;
+  padding:0px 0px 0px 550px;
+}
+/*drop down accordian menu for the streamers*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.4s;
+}
+.acordion:hover {
+  background-color: #777;;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 10px;
+  background-color:#E0E0E0 ;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+/*css for register form*/
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+float: left;
+width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
+   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+.uldiv{
+   height:40vh;
+  width:60vh;
+  font-size: 1.5vh;
+  text-align: center;
+  background-color: grey;
+ display:table-cell;
+ vertical-align: 100%;
+ 
+}
+.update{
+   height:20%;
+  width: 15%;
+ float:right;
+ padding-top: 3vh;
+ margin-top:20vh;
+  margin-right: 7vh;
+  margin-left: 1vh;
+ text-align: center;
+  background-color: yellow;
+  display:table-cell;
+  border-radius: 5px;
+ border-style: outset;
+  
+}
+
+.adminreg{
+  height:20%;
+ width: 15%;
+float:right;
+padding-top: 2vh;
+margin-top:20vh;
+ margin-right: 8vh;
+ margin-left: 1vh;
+text-align: center;
+ background-color:orchid;
+ display:table-cell;
+ border-radius: 5px;
+border-style: outset;
+ 
+}
+.artiste{
+  height:20%;
+  width:15%;
+  border-radius: 5px;
+  border-style:outset;
+float:left;
+padding-top: 3vh;
+margin-top: 20vh;
+margin-left:7vh;
+margin-right:2vh;
+text-align: center;
+ background-color: blue;
+ display:table-cell;
+ 
+}
+#mainmenu{
+  margin:0px auto;
+  
+}
+.menudiv{
+  margin-top:20vh;
+  margin-left:5vh;
+  margin-right:50vh;
+  
+}
+.labelclass{
+ 
+  font-weight: bold;
+ 
+}
+.inputclass{
+   background-color: 	#E8E8E8  ;
+  margin: 8px 0;
+  width:90%;
+ 
+}
+
+.pwrdclass{
+  background-color: 	#E8E8E8  ;
+  border-style: none;
+  height:3.5vh;
+ margin: 8px 0;
+ width:108%;
+
+}
+.pclass{
+  margin-top: 5vh;
+  width: 90%;
+  font-size: 1vw;
+}
+
+.topnav{
+  margin-top: 5vh;
+  margin-right: 15vh;
+  font-size: 1.8vh;
+  
+}
+.navheight{
+  width:100%;
+min-height:3vh;
+}
+
+.butt-class{
+ background-color: #686868;
+}
+.alert-error
+{
+  color:#a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-success
+{
+  color:#3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}

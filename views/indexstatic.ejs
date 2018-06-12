@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+          <link href="/css/index.css" rel="Stylesheet"/>
+          <script src="/jquery/dist/jquery.min.js"></script>
+                 <!-- <script  src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+ <script src="/javascript/index.js" type="text/javascript"></script>-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                <nav>
+                    <div class="logodiv">logo </div>
+                   
+                     <a href=""> charts </a>
+                        <a href=""> news </a>
+                        <a href=""> music </a>
+                        
+                        <a  href=""><img  height="20" src='images/fblogo.png'  alt=""  class=''  width="20"/></a><!--
+                        --><a href=""><img  height="20" src='images/Instagram.png'  alt="" class=''  width="20"/></a><!-- 
+                           --><a  href=""><img  height="20" src='images/twitter.png'  alt="" class='' width="20"/></a>
+                           
+                           <a  href=""><img src='images/search.png'  alt="" class='searchicon'/></a><!--
+                        -->
+                    <div class="menudiv"> <a href=""> <img src='images/menu.png'  alt="" class='icons'/> </a></div> 
+                    
+                   </nav>
+                <form action="/models/top100.js">
+                    <%{ %>
+                <div  id="bodydiv" > <div id="leftdiv" > 
+                 <!--create popup div-->
+                  <script>  var popup = document.createElement('div'); //div
+                                popup.className ="popup";
+                                var innercol =["col1","col2","col3","col4"];
+                                 for (j=0;j<3;j++){
+                                 var colone = document.createElement('div'); //div
+                                 var imgcol = document.getElementById("col4");
+                                 var colimg=document.createElement('img');
+                             colimg.className= "col4";
+                                 colimg.src="images/blackarrow.png";
+                                  colone.className=innercol[j];
+                                     popup.appendChild(colone);
+                                         
+                                    
+                                       }
+                                       popup.appendChild(colimg);
+                      //  function multidivs(){
+                            var columnnames=["arrowdiv","contentdiv","rcontentdiv","ccontentdiv"];//styles for innerdiv
+                            var columnids=["arrow", "content", "rcontent","ccontent" ];
+                            var rows=100;
+                            var col = 4;
+                         //var columndiv = document.createElement('div'); 
+                             for( x=0; x<rows;x++) {
+                             var row= document.createElement('div');
+                              row.className = "innerdiv";
+                              //define for the inner divs to be created as columnd
+                          
+                              for(var i=0; i<col; i++){
+                                  var columndiv = document.createElement('div'); //div
+                                   columndiv.className =columnnames[i];
+                                   columndiv.id=columnids[i];
+                                                                     
+                            // columndiv.innerHTML="cell"+i +"row"+x; 
+                            // colone.innerHTML="1";
+                                                          
+                                   //attach arrow image
+                                  if(columndiv.className=== columnnames[0]){
+                                      attachImage(columndiv);
+                                    
+                                       }
+                                                       
+                                   
+                                 row.appendChild(columndiv);
+                                      
+                                }
+                            document.getElementById('leftdiv').appendChild(row);
+                               }
+                              //  alert("total rows"+x);
+                            //}
+                          //attach arrow image onload and thn on mouseover and mouseout
+                         function attachImage(columndiv){
+                             var img =document.createElement('img');
+                               img.className= "imgdiv";
+                                img.src="images/orangearrow.png";
+                              columndiv.appendChild(img);
+                              
+                             domouseover(); /*this will change the arrow directions and also add popup*/
+                               domouseout();/*take out popup*/
+                               //onmouseover changes the arrow
+                               function domouseover(){
+                               columndiv.addEventListener("mouseover", function(){
+                                        img.src="images/whitearrow.png";
+                                       columndiv.appendChild(img);
+                                       
+                                        columndiv.appendChild(popup);
+                                        }); }
+                                   
+                                     function domouseout(){
+                                       columndiv.addEventListener("mouseout", function(){
+                                         img.src="images/orangearrow.png";
+                                         columndiv.removeChild(popup);
+                                     });   }
+                                          
+                                
+                                }
+                        
+                        </script>
+                      </div> 
+                         <% } %>
+                        </form>
+                      
+                        <script src="/jquery/dist/jquery.js"></script>
+                        <script src="/socket.io/socket.io.js"></script>
+
+              <form id="form">    <div id="rightdiv">
+                        <div class="topdiv" ><div class="innertop" > Top100 news</div>
+                         <div class="innertopdiv" id="innert">eee  </div>       </div> 
+                        <div class="bottomdiv"><div class="innerbottom" id="inb"> Highlights</div> </div>
+                       
+                    </div> </form></div>
+                    
+               
+      </div>
+      </div> 
+    </body>
+</html>
+<script>  
+    var socket = io.connect('http://localhost:3000');
+    socket.on('connect', function(data) {
+       socket.emit('join', 'Hello World from client');
+   
+      });
+      //mdg from server
+  socket.on('messages', function(data) {
+      //document.getElementById(content).innerHTML="";
+console.log("got htis", data.date);
+      
+      // alert(data.date);
+    
+     $('#innert').html(data.date);
+   //  $('#inb').append(data.date);
+
+   $('div.contentdiv').html(data.date);
+   $('div.ccontentdiv').html(data.take);
+   $('div.rcontentdiv').html(data.list);
+ $('div.col1').html(data.list);
+  // colone.innerHTML="1"; 
+        });
+   
+   </script>  
