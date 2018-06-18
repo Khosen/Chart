@@ -57,9 +57,10 @@ MongoClient.connect('mongodb://localhost:27017/top100', (err, db) => {
   //module.exports = mongoose;
 
   module.exports ={
-    //database:'mongodb://localhost:27017/top100',
-    database:'mongodb://Khels:@khosen11@ds247310.mlab.com:47310/top100',
-    secret: 'mysecret'
+  //  database:'mongodb://localhost:27017/top100',
+   database:'mongodb://Khels:@khosen11@ds163510.mlab.com:63510/top100'
+
+   // secret: 'mysecret'
   }
 /*
     var mongoose = require("mongoose");

@@ -55,7 +55,7 @@ if(mimetype && extname){
 }
 }
 //register form
-router.get('/register', ensureAutenticated, function(req, res){
+router.get('/register', function(req, res){
     res.render('register');
 });
 
@@ -129,7 +129,7 @@ router.post('/login', function(req, res, next){
 });
 
 //redirect process
-router.get('/Menu', ensureAutenticated,function(req, res){
+router.get('/Menu', ensureAuthenticated,function(req, res){
     res.render('Menu');
 });
 
@@ -139,7 +139,7 @@ router.get('/redirect', function(req, res){
     // console.log(req.body.artiste);
  });
  
-router.get('/admin', ensureAutenticated,function(req, res){
+router.get('/admin', ensureAuthenticated,function(req, res){
    //var name="ok";
     res.render('admin');
    // console.log(req.body.artiste);
@@ -151,7 +151,7 @@ router.get('/logout', function(req, res){
     res.redirect('/users/login');
 });
 
-router.get('/songs', ensureAutenticated,function(req, res){
+router.get('/songs', ensureAuthenticated,function(req, res){
   //  let newartiste = new musician();
     
     res.render('songs');
@@ -298,7 +298,7 @@ router.post('/admin', function(req, res){
   
 });
 
-function ensureAutenticated(req,res, next){
+function ensureAuthenticated(req,res, next){
     if(req.isAuthenticated()){
         return next();
 

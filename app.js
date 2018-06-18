@@ -4,10 +4,21 @@ app = express(),
  io = require('socket.io')(server);
 
 port = process.env.PORT || 3000;
+
 var bodyParser = require ('body-parser');
 var path = require('path');
 var logger = require('morgan');
 var flash= require('connect-flash');
+
+
+//heroku
+var cool = require('cool-ascii-faces')
+ //express = require('express')
+//const path = require('path')
+//const PORT = process.env.PORT || 5000
+//var MONGO_DB = process.env.MONGO_URL;// || 5000;
+
+
 //var config = require('./config')();
 var mongoose = require('mongoose');
 var expressValidator = require('express-validator');
@@ -19,7 +30,15 @@ var fs = require('fs');
 var multer = require('multer');
 var MongoClient = require('mongodb').MongoClient;
 var MONGO_URL = 'mongodb://top100:khosen11@ds163510.mlab.com:63510/top100';
+//var MONGO_DB = process.env.MONGO_URL;
 
+//express()
+ // .use(express.static(path.join(__dirname, 'public')))
+ // .set('views', path.join(__dirname, 'views'))
+  //.set('view engine', 'ejs')
+  //.get('/', (req, res) => res.render('pages/index'))
+  //.get('/cool', (req, res) => res.send(cool()))
+  //.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 //var io = require('socket.io')(app);
 //var multidiv=require('./public/javascript/index')();
 //var top100 = require('./routes/top100');
@@ -154,11 +173,12 @@ app.use(passport.session());*/
 //call all the routes
 let  routes= require('./routes/index');
 let users = require('./routes/users');
-
+//hlet cool = require('./routes/cool');
+//.get('/cool', (req, res) => res.send(cool()))
 //let imgupload = require('./routes/upload');
 app.use('/', routes);
 app.use('/users', users);
-
+//app.use('/cool');
 /*
 var getData = function() {
   return Math.random().toString();
@@ -167,6 +187,7 @@ var getData = function() {
 app.get('/', function(req, res) {
   //render index.ejs file
   res.render('index', {val: getData()});
+
 });
 
 app.get('/ajax', function(req, res) {
