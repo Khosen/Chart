@@ -8,15 +8,17 @@ var bodyParser = require ('body-parser');
 var path = require('path');
 var logger = require('morgan');
 var flash= require('connect-flash');
-var config = require('./config')();
+//var config = require('./config')();
 var mongoose = require('mongoose');
 var expressValidator = require('express-validator');
 var passport = require('passport');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-var configdb= require('./config/database');
+//var configdb= require('./config/database');
 var fs = require('fs');
 var multer = require('multer');
+var MongoClient = require('mongodb').MongoClient;
+var MONGO_URL = 'mongodb://top100:khosen11@ds163510.mlab.com:63510/top100';
 
 //var io = require('socket.io')(app);
 //var multidiv=require('./public/javascript/index')();
@@ -27,7 +29,7 @@ mongoose.Promise = global.Promise;
 
 //mongoose.Promise = Promise;
 //configuration===========================
- mongoose.connect(configdb.database, {
+ mongoose.connect(MONGO_URL, {
  keepAlive: true,
  reconnectTries: Number.MAX_VALUE,
 useMongoClient: true
@@ -39,7 +41,7 @@ let db = mongoose.connection;
 
 //check connection
 db.once('open', function(){
-  console.log('connected to MongoDB....');
+  console.log('connected to Mlab....');
 });
 
 //check for errors
@@ -50,6 +52,14 @@ db.on('error', function(err){
 
 
 
+/*MongoClient.connect(MONGO_URL, (err, db) => {  
+//  assert.equal(null, err);
+  console.log("Connected successfully to server");
+
+  //db.close();
+  // Do something with db here, like inserting a record
+
+});*/
 //app.get('/', function(req, res) {
 //res.send('Hello World!')
 //})
